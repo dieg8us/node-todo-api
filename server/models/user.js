@@ -41,7 +41,7 @@ UserSchema.methods.toJSON = function() {
   return _.pick(userObject, ['_id', 'email']);
 };
 
-// instant method generate auth token
+// Instant methods
 UserSchema.methods.generateAuthToken = function() {
   let user = this;
   let access = 'auth';
